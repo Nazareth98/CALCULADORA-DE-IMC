@@ -1,28 +1,30 @@
+@charset "UTF-8";
+
 /*
 font-family: 'Poppins', sans-serif;
 font-family: 'Quicksand', sans-serif;
 
 */
 
-*   {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 
-:root   {
+:root {
     font-size: 62.5%;
 }
 
-.flex   {
+.flex {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.grid   {
+.grid {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -62,8 +64,8 @@ font-family: 'Quicksand', sans-serif;
 
 .intro {
     width: 100%;
-    color: white;
-    text-align: center;
+    color: #fff;
+    text-align: left;
     margin: 2rem auto;
     font-size: 2rem;
 }
@@ -84,13 +86,17 @@ font-family: 'Quicksand', sans-serif;
     font-size: 1.6rem;
 }
 
-.input   {
+.input {
     width: 100%;
     padding: 1rem;
     margin: 0.8rem 0rem;
     border-radius: 0.4rem;
     border: none;
     display: block;
+}
+
+.input:focus {
+    outline: none;
 }
 
 .button-box {
@@ -103,11 +109,24 @@ font-family: 'Quicksand', sans-serif;
     width: 45%;
     padding: 1rem;
     border-radius: 0.4rem;
-    border: none;
+    border: 0.2rem solid rgba(255, 255, 255, 0);
     margin-top: 0.7rem;
+    font-size: 1.4rem;
 }
 
-.label  {
+.button:hover {
+    background-color: rgb(113, 201, 223);
+    border: 0.2rem solid #fff;
+    color: #fff;
+    transition: 300ms;
+    font-weight: bold;
+}
+
+.button:active {
+    background-color: rgb(81, 159, 179);
+}
+
+.label {
     font-size: 1.6rem;
     font-weight: bold;
     margin-left: 0.2rem;
@@ -126,11 +145,9 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .linhaHorizontal {
-    width: 80%;
-    border: 0.1rem solid rgba(113, 201, 223, 0.438);
+    width: 100%;
+    border: 0.1rem dashed rgba(113, 201, 223, 0.438);
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-right: auto;
 }
-
-
