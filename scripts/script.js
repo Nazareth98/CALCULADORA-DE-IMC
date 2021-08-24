@@ -1,12 +1,3 @@
-// inserir altura
-// inserir peso
-// botão para calcular
-
-// apresentar dados sobre o IMC
-// após calcular, mostrar "diagnóstico"
-
-
-
 function calcular() {
     let altura = Number(document.getElementById("altura").value) * 100
     let peso = Number(document.getElementById("peso").value)
@@ -25,7 +16,7 @@ function calcular() {
             resultado.innerHTML +=
                 `<div id="resultado" class="container-info info">
             <div class="subtitle">
-                <p>⚠️ Sinto muito, seu IMC atual é de <strong>${imc}kg/m<sup>2</sup></strong> e você precisa ganhar peso. </p>
+                <p>⚠️ Sinto muito, seu IMC atual é de <span>${imc}kg/m<sup>2</sup></span> e você precisa ganhar peso. </p>
             </div>
             <div class="linhaHorizontal"></div>
 
@@ -38,7 +29,7 @@ function calcular() {
             resultado.innerHTML +=
                 `<div id="resultado" class="container-info info">
             <div class="subtitle">
-                <p>💹 Parabéns, seu IMC atual é ${imc}kg/m<sup>2</sup> e você está dentro do peso adequado!</p>
+                <p>💹 Parabéns, seu IMC atual é <span>${imc}kg/m<sup>2</sup></span> e você está dentro do peso adequado!</p>
             </div>
             <div class="linhaHorizontal"></div>
 
@@ -51,7 +42,7 @@ function calcular() {
         } else if (imc >= 24.9 && imc < 30) {
             resultado.innerHTML += `<div id="resultado" class="container-info info">
             <div class="subtitle">
-                <p>⚠️ Sinto muito, seu IMC atual é ${imc}kg/m<sup>2</sup> por isso você está acima do peso.</p>
+                <p>⚠️ Sinto muito, seu IMC atual é <span>${imc}kg/m<sup>2</sup></span> por isso você está acima do peso.</p>
             </div>
             <div class="linhaHorizontal"></div>
 
@@ -62,7 +53,7 @@ function calcular() {
         } else if (imc >= 30) {
             resultado.innerHTML += `<div id="resultado" class="container-info info">
             <div class="subtitle">
-                <p>⚠️ Sinto muito, seu IMC atual é ${imc}kg/m<sup>2</sup> por isso você está acima do peso.</p>
+                <p>⚠️ Sinto muito, seu IMC atual é <span>${imc}kg/m<sup>2</sup></span> por isso você está acima do peso.</p>
             </div>
 
             <div class="linhaHorizontal"></div>

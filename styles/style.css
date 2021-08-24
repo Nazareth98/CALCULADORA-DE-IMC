@@ -65,9 +65,9 @@ font-family: 'Quicksand', sans-serif;
 .intro {
     width: 100%;
     color: #fff;
-    text-align: left;
+    text-align: center;
     margin: 2rem auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container-box-info {
@@ -150,4 +150,12 @@ font-family: 'Quicksand', sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-right: auto;
+}
+
+span {
+    color: rgb(81, 159, 179);
+}
+
+@media screen and (max-width: 780px){
+    
 }
